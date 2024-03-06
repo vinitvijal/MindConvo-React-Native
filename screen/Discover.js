@@ -5,8 +5,8 @@ const Discover = ({ navigation }) => {
     return (
         <SafeAreaView>
         <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Therapy')}
+        title="Go to Profile"
+        onPress={() => navigation.navigate('Profile')}
         />
         </SafeAreaView>
     );

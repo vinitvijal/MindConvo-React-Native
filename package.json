@@ -16,8 +16,6 @@
     "@react-navigation/material-bottom-tabs": "^6.2.24",
     "@react-navigation/native": "^6.1.14",
     "@react-navigation/native-stack": "^6.9.22",
-    "@tamagui/config": "^1.91.1",
-    "@tamagui/core": "^1.91.1",
     "expo": "~50.0.8",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
@@ -27,8 +25,7 @@
     "react-native-screens": "~3.29.0",
     "react-native-splash-screen": "^3.3.0",
     "react-native-svg": "^14.1.0",
-    "react-native-vector-icons": "^10.0.3",
-    "tamagui": "^1.91.1"
+    "react-native-vector-icons": "^10.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

@@ -10,6 +10,7 @@ import SubscriptionManage from './pages/SubscriptionManage';
 import FAQ from './pages/FAQ';
 import InviteFriend from './pages/InviteFriend';
 import About from './pages/About';
+import Settings from './pages/Settings';
 
 
 const Stack = createNativeStackNavigator();
@@ -30,6 +31,7 @@ function App() {
           <Stack.Screen name="FAQ" component={FAQ} />
           <Stack.Screen name="InviteFriend" component={InviteFriend} />
           <Stack.Screen name="About" component={About} />
+          <Stack.Screen name="Settings" component={Settings} />
         </Stack.Navigator>
         <StatusBar barStyle="dark" />
 
