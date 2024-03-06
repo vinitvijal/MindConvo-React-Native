@@ -1,14 +1,14 @@
 import React from 'react';
-import {View, StyleSheet, Text, Button} from 'react-native';
+import {StyleSheet, Text, Button, SafeAreaView} from 'react-native';
 
 const Discover = ({ navigation }) => {
     return (
-        <View>
+        <SafeAreaView>
         <Button
         title="Go to Details"
         onPress={() => navigation.navigate('Therapy')}
         />
-        </View>
+        </SafeAreaView>
     );
 }
 

@@ -1,14 +1,16 @@
 import React from 'react';
-import {View, StyleSheet, Text, SafeAreaView} from 'react-native';
+import { View, Text, SafeAreaView } from 'react-native';
+import { Button, ButtonText } from "@gluestack-ui/themed";
 
 const Therapy = () => {
     return (
         <SafeAreaView>
             <Text>Therapy</Text>
+            <Button action="secondary">
+                <ButtonText>Go to Details</ButtonText>
+            </Button>
         </SafeAreaView>
     );
 }
-
-const styles = StyleSheet.create({})
 
 export default Therapy;

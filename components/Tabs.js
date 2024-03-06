@@ -8,13 +8,14 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useState } from 'react/cjs/react.development';
 import { useNavigation } from "@react-navigation/native";
+import SubscriptionManage from '../pages/SubscriptionManage';
 
 const Tab = createMaterialBottomTabNavigator();
 
 
 function Tabs() {
 
-    const [selectedTab, setSelectedTab] = useState("Therapy");
+    const [selectedTab, setSelectedTab] = useState("Discover");
     const navigation = useNavigation();
 
   const handleTabPress = (name) => {
@@ -25,15 +26,16 @@ function Tabs() {
   return (
   
     <Tab.Navigator
-      initialRouteName="Therapy"
+      initialRouteName="Discover"
       backBehavior="none"
+      activeColor="#F7813E"
       screenOptions={{
         tabBarActiveTintColor: "#F7813E",
         tabBarInactiveTintColor: "#fff",
         tabBarStyle: {
           backgroundColor: "#FFD8B9",
           paddingHorizontal: 20,
-          height: 70,
+          height: 10,
           borderTopWidth: 0,
         },
         tabBarLabelStyle: {
