@@ -3,6 +3,7 @@ import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AntDesign from 'react-native-vector-icons/AntDesign'
 
+
 const Profile = ({navigation}) => {
     const faqLogo = require("../assets/icons/icons8-faq-96.png")
     const settingsLogo = require("../assets/icons/icons8-settings-96.png")
@@ -38,7 +39,8 @@ const Profile = ({navigation}) => {
                     <Text>{"Manage Subscription"}</Text>
                 </View>
             </Pressable>
-            <Pressable style={{ flex: 0.1, padding: 1, flexDirection: 'row', justifyContent: "space-between", paddingHorizontal: 40, alignItems: "center" }} onPress={()=>navigation.navigate("InviteFriend")}>
+            <Pressable style={{ flex: 0.1, padding: 1, flexDirection: 'row', justifyContent: "space-between", paddingHorizontal: 40, alignItems: "center" }} 
+            onPress={()=>console.log("object")}>
                 <View style={{ flexDirection: 'row', alignItems: "center" }}>
                 <Image source={inviteLogo} style={{ width: 25, height: 25, marginRight: 10 }} />
                     <Text>{"Invite Friends"}</Text>
