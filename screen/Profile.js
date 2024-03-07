@@ -1,7 +1,6 @@
 import { View, Text, Image, SafeAreaView, Pressable, TouchableOpacity } from "react-native";
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import AntDesign from 'react-native-vector-icons/AntDesign'
 
 
 const Profile = ({navigation}) => {
