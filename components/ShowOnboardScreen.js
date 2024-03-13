@@ -4,6 +4,7 @@ import { OnboardFlow, SecondaryButton } from 'react-native-onboard';
 import { useState } from 'react/cjs/react.development';
 
 const ShowOnboardScreen = ({navigation}) => {
+  const [login, setLogin] = useState(false);
     return (
         <OnboardFlow
       pages={[
@@ -17,7 +18,7 @@ With 95% positive results`,
       ]}
       type={'fullscreen'}
       onDone={() => {
-        navigation.replace('Login');
+        { login ? navigation.replace('Home') : navigation.replace('Login')}
       }}
       
       />
