@@ -13,7 +13,7 @@ const Profile = ({navigation}) => {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-        <Pressable onPress={()=>navigation.navigate('Login')} style={{ flex: 0.1, padding: 1,  marginTop: 50, flexDirection: 'row', justifyContent: "space-between", paddingHorizontal: 20, alignItems: "center" }}>
+        <Pressable onPress={()=>navigation.navigate('Account')} style={{ flex: 0.1, padding: 1,  marginTop: 50, flexDirection: 'row', justifyContent: "space-between", paddingHorizontal: 20, alignItems: "center" }}>
             <Image
             style={{ width: 50, height: 50, borderRadius: 100 }}
             source={{ uri: "https://www.w3schools.com/w3images/avatar2.png" }}

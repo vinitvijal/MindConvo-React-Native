@@ -18,6 +18,8 @@ import Blogs from './screen/Blogs';
 import EBooks from './screen/EBooks';
 import Podcasts from './screen/Podcasts';
 import Tools from './screen/Tools';
+import Account from './pages/Account';
+import Profile from './screen/Profile';
 
 
 const Stack = createNativeStackNavigator();
@@ -34,9 +36,8 @@ function App() {
   return (
     <GluestackUIProvider config={config}>
       <NavigationContainer>
-        <Stack.Navigator options={{headerShown: false}} screenOptions={{headerShown: false}} >
+        <Stack.Navigator  options={{headerShown: false}} screenOptions={{headerShown: false}} >
           <Stack.Screen name="OnboardFlow" component={ShowOnboardScreen} />
-          <Stack.Screen name="Profile" component={SubscriptionManage} />
           <Stack.Screen name="Subscription" component={SubscriptionManage} />
           <Stack.Screen name="FAQ" component={FAQ} />
           <Stack.Screen name="Home" component={MyTabs} />
@@ -48,6 +49,7 @@ function App() {
           <Stack.Screen name="EBooks" component={EBooks} />
           <Stack.Screen name="Podcasts" component={Podcasts} />
           <Stack.Screen name="Tools" component={Tools} />          
+          <Stack.Screen name="Account" component={Account} />          
         </Stack.Navigator>
         <StatusBar barStyle="dark" />
       </NavigationContainer>
